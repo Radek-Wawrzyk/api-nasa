@@ -1,0 +1,52 @@
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: $accent-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 100;
+  transition: opacity $transition-time;
+
+  &--loaded {
+    opacity: 0;
+  }
+
+  &__inner {
+    width: 25px;
+    height: 25px;
+    animation: circleAnimation infinite 1s linear;
+    border: 2px solid $text-color;
+    border-top-color: transparent;
+    border-radius: 100%;
+  }
+
+  &__text {
+    color: $text-color;
+    margin: 1rem 0 0 0;
+    font-size: 20px;
+    font-weight: 700;
+    animation: fadeAnimation infinite 3s linear;
+  }
+}
+
+// Animation
+
+@keyframes circleAnimation {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeAnimation {
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}

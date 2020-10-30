@@ -1,0 +1,23 @@
+.error-notification {
+  padding: 0 1rem;
+  text-align: center;
+  animation: fadeOnInit 1s;
+
+  &__heading {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  &__description {
+    font-weight: bold;
+  }
+}
+
+@keyframes fadeOnInit {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
