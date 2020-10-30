@@ -17,7 +17,3 @@ npm start
 ```
 npm run build
 ```
-
-| dw  | dw  | dw  |
-| --- | --- | --- |
-| 32  | 323 | 23  |
