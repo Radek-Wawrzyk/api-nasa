@@ -1,5 +1,8 @@
 # api-nasa
 
+### Requirements
+- Node.js
+
 ### Installation
 
 ```
